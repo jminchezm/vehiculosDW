@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <title>Electricos - Vehículos</title>
+</head>
+<body>
+    {{!-- Lugar del header --}}
+    {{> header}}
+
+    <main class="inicio" id="inicio">
+        <section id="proyecto">
+            <h1 class="titulo-proyecto">Autos Eléctricos: Un Futuro Más Sostenible</h1>
+            <h2>¿Qué son los autos eléctricos?</h2>
+            <p class="descripcion-proyecto">      
+                Los autos eléctricos son vehículos que funcionan con uno o más motores eléctricos, utilizando energía 
+                almacenada en baterías recargables en lugar de combustibles fósiles. Esto los convierte en una alternativa
+                 más limpia y sostenible en comparación con los autos de combustión interna tradicionales.       
+            </p>
+            <div class="contenido-proyecto">
+                <h2>Tendencias y futuro</h2>
+                <p>
+                  El mercado de los autos eléctricos está creciendo rápidamente, impulsado por políticas ambientales, innovaciones 
+                  tecnológicas y una mayor concienciación sobre la sostenibilidad. Los avances en la tecnología de baterías, como 
+                  las de estado sólido, y la expansión de la infraestructura de carga hacen que los autos eléctricos sean cada vez 
+                  más accesibles y prácticos para los consumidores. 
+                </p>
+                <div class="imagenes-proyecto">
+                    <img src="/images/electrico/electrico1.jpg" alt="Imagen del Proyecto">
+                    <img src="/images/electrico/electrico2.jpg" alt="Imagen del Proyecto">
+                </div>
+            </div>
+
+            <div class="video-proyecto">
+                <h2>Video de Explicación</h2>
+                <iframe src="https://www.youtube.com/embed/sX4p-pB_sd4?si=IHXui6pNOObXlSEr" 
+                        title="Video de Explicación del Proyecto" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+        {{!-- Espacio del footer --}}
+        {{> footer}}
+    </main>  
+</body>
+</html>

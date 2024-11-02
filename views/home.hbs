@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <title>Página principal - Vehículos</title>
+</head>
+<body>
+    {{!-- Lugar del header --}}
+    {{> header}}
+
+    <main class="inicio" id="inicio">
+        <section id="proyecto">
+            <h1 class="titulo-proyecto">Vehículos Terrestres de Carga: Pilar del Transporte y la Logística</h1>
+            <h2>¿Qué son los vehículos terrestres de carga?</h2>
+            <p class="descripcion-proyecto">      
+                Los vehículos terrestres de carga son aquellos diseñados para transportar bienes y mercancías a través de caminos 
+                y carreteras. Son una parte esencial de la cadena de suministro y juegan un papel fundamental en el comercio local 
+                e internacional, ya que facilitan el traslado de productos desde los centros de producción hasta los puntos de venta 
+                o consumo.         
+            </p>
+            <div class="contenido-proyecto">
+                <h2>Tipos de vehículos de carga:</h2>
+                <p>
+                  <b>Camiones ligeros:</b> Utilizados principalmente para entregas urbanas y de corta distancia, como furgonetas y camionetas 
+                  de reparto.  
+                </p>
+                <p>
+                  <b>Camiones pesados:</b> Incluyen los tráileres y vehículos articulados, como los semirremolques, que transportan grandes 
+                  volúmenes de carga a nivel nacional e internacional.  
+                </p>
+                <p>
+                  <b>Vehículos especializados:</b>  Diseñados para transportar mercancías específicas, como cisternas para líquidos, 
+                  camiones refrigerados para productos perecederos y transportadores de vehículos.  
+                </p>
+                <div class="imagenes-proyecto">
+                    <img src="/images/home/camion1.jpg" alt="Imagen del Proyecto">
+                    <img src="/images/home/camion2.jpg" alt="Imagen del Proyecto">
+                    <img src="/images/home/camion3.png" alt="Imagen del Proyecto">
+                </div>
+            </div>
+
+            <div class="video-proyecto">
+                <h2>Video de Explicación</h2>
+                <iframe src="https://www.youtube.com/embed/jxPNNIhzjjw?si=lLMiNjSIPkus1Lav" 
+                        title="Video de Explicación del Proyecto" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+        {{!-- Espacio del footer --}}
+        {{> footer}}
+    </main>  
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <title>Gasolina - Vehículos</title>
+</head>
+<body>
+    {{!-- Lugar del header --}}
+    {{> header}}
+
+    <main class="inicio" id="inicio">
+        <section id="proyecto">
+            <h1 class="titulo-proyecto">Gasolina: El Combustible que Mueve al Mundo</h1>
+            <h2>¿Qué es la gasolina?</h2>
+            <p class="descripcion-proyecto">      
+                La gasolina es un combustible fósil derivado del petróleo, compuesto por una mezcla de hidrocarburos. 
+                Es uno de los principales productos de refinación del crudo y se utiliza en motores de combustión interna, 
+                siendo la fuente de energía más común para vehículos terrestres, como automóviles y motocicletas.      
+            </p>
+            <div class="contenido-proyecto">
+                <h2>Futuro de la gasolina y energías alternativas</h2>
+                <p>
+                  El uso de la gasolina sigue siendo predominante, pero la creciente conciencia ambiental y las regulaciones 
+                  gubernamentales están impulsando la transición hacia fuentes de energía más limpias. Se espera que en las 
+                  próximas décadas, los combustibles fósiles sean reemplazados gradualmente por opciones más sostenibles,
+                   reduciendo la huella de carbono y promoviendo un transporte más ecológico.
+                </p>
+                <div class="imagenes-proyecto">
+                    <img src="/images/gasolina/gasolina1.jpg" alt="Imagen del Proyecto">
+                    <img src="/images/gasolina/gasolina2.jpg" alt="Imagen del Proyecto">
+                </div>
+            </div>
+
+            <div class="video-proyecto">
+                <h2>Video de Explicación</h2>
+                <iframe src="https://www.youtube.com/embed/Lo94J7w8Mfc?si=Q3QSvV07i3obwHuF" 
+                        title="Video de Explicación del Proyecto" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+        {{!-- Espacio del footer --}}
+        {{> footer}}
+    </main>  
+</body>
+</html>

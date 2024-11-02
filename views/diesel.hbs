@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <title>Diesel - Vehículos</title>
+</head>
+<body>
+    {{!-- Lugar del header --}}
+    {{> header}}
+
+    <main class="inicio" id="inicio">
+        <section id="proyecto">
+            <h1 class="titulo-proyecto">Diésel: Un Combustible Fundamental para la Industria y el Transporte</h1>
+            <h2>¿Qué es diésel?</h2>
+            <p class="descripcion-proyecto">      
+                El diésel es un combustible fósil derivado del petróleo, compuesto por una mezcla de hidrocarburos de mayor peso 
+                molecular que la gasolina. Es ampliamente utilizado en motores de combustión interna, especialmente en vehículos 
+                de carga, maquinaria agrícola, y transporte público e industrial, debido a su alta eficiencia energética y capacidad 
+                para generar torque.     
+            </p>
+            <div class="contenido-proyecto">
+                <h2>Alternativas y el futuro del diésel</h2>
+                <p>
+                  El futuro del diésel enfrenta desafíos con la transición hacia fuentes de energía más limpias. Las nuevas 
+                  tecnologías, como el biodiésel y los combustibles sintéticos, están en desarrollo para ofrecer opciones más 
+                  sostenibles. Además, los motores híbridos y eléctricos están ganando popularidad, especialmente en áreas urbanas
+                   donde la reducción de emisiones es crítica.
+                </p>
+                <div class="imagenes-proyecto">
+                    <img src="/images/diesel/diesel1.jpg" alt="Imagen del Proyecto">
+                    <img src="/images/diesel/diesel2.jpeg" alt="Imagen del Proyecto">
+                </div>
+            </div>
+
+            <div class="video-proyecto">
+                <h2>Video de Explicación</h2>
+                <iframe src="https://www.youtube.com/embed/Lo94J7w8Mfc?si=Q3QSvV07i3obwHuF" 
+                        title="Video de Explicación del Proyecto" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+        {{!-- Espacio del footer --}}
+        {{> footer}}
+    </main>  
+</body>
+</html>

@@ -1,0 +1,282 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth; /* Aplica desplazamiento suave a toda la página */
+}
+
+body {
+    background: #F2F2F2;
+    color: #333;
+}
+
+/* Estilo del header */
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    background: #020B26;
+    z-index: 100;
+    border-bottom: 1px solid #F2421B;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    /* height: 40px; */
+}
+
+.navbar-opcion {
+    text-decoration: none;
+    margin-right: 15px;
+    color: #F2421B;
+    font-weight: bold;
+    padding: 5px 10px;
+    background-color: transparent; /* Establece el color de fondo inicial */
+    /* transition: color 0.3s ease, border-bottom 0.3s ease, transform 0.3s ease, background-color 0.3s ease; */
+}
+
+.navbar-opcion:hover {
+    color: #1BA698;
+    border-bottom: 3px solid #F2421B;
+    font-weight: bolder;
+    transform: scale(1.05); /* Efecto de escala para resaltar el enlace */
+    background-color: rgba(242, 66, 27, 0.1); /* Establece el color de fondo al pasar el cursor */
+}
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    border-top: 2px solid #F2421B;
+    background: #020B26;
+    color: #1BA698;
+}
+
+.footer-container {
+    text-align: center;
+}
+
+.footer-name {
+    font-size: 24px;
+    margin: 5px 0;
+}
+
+.footer-id {
+    font-size: 18px;
+    margin: 5px 0;
+    font-style: italic;
+}
+
+.footer-contact {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.footer-contact p {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.footer-contact i {
+    margin-right: 10px;
+    color: #F2421B; /* Color for icons */
+}
+
+.footer-social {
+    margin-top: 10px;
+}
+
+.footer-social a {
+    color: #1BA698;
+    margin: 0 15px;
+    font-size: 24px;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-social a:hover {
+    color: #F2421B; /* Color on hover */
+}
+
+
+/*Proyectos*/
+#proyecto {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f4f4f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-proyecto {
+    font-size: 32px;
+    color: #F2421B;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.descripcion-proyecto {
+    font-size: 18px;
+    color: #444;
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.tecnologias-utilizadas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0;
+    text-align: center;
+}
+
+.tecnologias-utilizadas h2 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.tecnologias-utilizadas .tecnologias-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacio entre las tecnologías */
+    flex-wrap: wrap; /* Permite que las tecnologías se acomoden en filas en pantallas pequeñas */
+}
+
+.tecnologia-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tecnologia-item img {
+    width: 60px;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.tecnologia-item img:hover {
+    transform: scale(1.1);
+}
+
+.contenido-proyecto {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.imagenes-proyecto {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.imagenes-proyecto img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-proyecto {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.video-proyecto iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.github-enlace {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.github-enlace a {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 24px;
+    background-color: #333;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.github-enlace a:hover {
+    background-color: #555;
+}
+
+.github-enlace img {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.menu-hamburguesa {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .menu-hamburguesa {
+        display: block; /* Asegúrate de que esté en 'block' para que se vea */
+        cursor: pointer;
+        font-size: 24px;
+        color: #ffffff; /* O el color que necesites */
+        margin-left: 10px;
+    }
+    
+    .navbar {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(2, 11, 38, 0.8); /* Color de fondo con 80% de opacidad */
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    .navbar.activo {
+        display: flex;
+    }
+
+    .navbar a {
+        text-align: center;
+        padding: 15px;
+        border-bottom: 1px solid #1BA698;
+        width: 100%;
+    }
+
+    .titulo-formacionAcademica{
+        font-size: 10px;
+    }
+}
+

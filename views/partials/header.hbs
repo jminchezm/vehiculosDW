@@ -1,0 +1,20 @@
+<header class="header">
+    <div class="menu-hamburguesa" id="menuToggle">
+        <i class="fas fa-bars"></i> <!-- Icono de menú hamburguesa -->
+    </div>
+    <nav class="navbar" id="barra">
+        <a href="/" class="navbar-opcion">Página Principal</a>
+        <a href="/electricos" class="navbar-opcion">Eléctricos</a>
+        <a href="/gasolina" class="navbar-opcion">Gasolina</a>
+        <a href="/diesel" class="navbar-opcion">Diesel</a>
+    </nav>
+</header>
+
+<script>
+    const menuToggle = document.getElementById('menuToggle');
+    const barra = document.getElementById('barra');
+
+    menuToggle.addEventListener('click', () => {
+        barra.classList.toggle('activo');
+    });
+</script>
